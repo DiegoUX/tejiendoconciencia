@@ -15,7 +15,9 @@
 		<link href="/wp-content/themes/tejiendoconciencia/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-  		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
+  		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,700' rel='stylesheet' type='text/css'>
+
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 		<?php wp_head(); ?>
 		<script>
@@ -31,25 +33,47 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<!-- <div class="wrapper"> -->
 
 			<!-- header -->
 			<header class="header clear" role="banner">
+				<div class="container">
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
+					<nav id="site-navigation" class="navbar navbar-fixed-top" role="navigation">
+		
+						<!-- Small Logo -->
+						<div class="small-logo">
+							<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+								<img src="/wp-content/themes/tejiendoconciencia/images/small-logo.png" alt="TejiendoConCiencia Logo">
+							</a>
+						</div>
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
+
+
+						<h3 class="sr-only"><?php _e( 'Main menu', 'html5blank' ); ?></h3>
+						<a class="sr-only" href="#primary" title="<?php esc_attr_e( 'Skip to content', 'html5blank' ); ?>"><?php _e( 'Skip to content', 'html5blank' ); ?></a>
+
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    </button>
+						</div>
+
+						<div class="collapse navbar-collapse">
+							<!--<?php html5blank_nav(); ?>-->
+
+							<?php
+							$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
+							wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav navbar-nav' . $menu_class, 'fallback_cb' => 'false' ) );
+							?>
+						</div>
+					</nav><!-- #site-navigation -->
+
+				</div>
+
+
 
 			</header>
 			<!-- /header -->
