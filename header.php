@@ -68,6 +68,8 @@
 							$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
 							wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav navbar-nav' . $menu_class, 'fallback_cb' => 'false' ) );
 							?>
+
+							<?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
 						</div>
 					</nav><!-- #site-navigation -->
 
