@@ -1,14 +1,75 @@
 /* Colors */
 
-$mainGreen: #505B3C;
-$lightGreen: #88A755;
-$darkGreen: #646F31;
-$coral: #CF3E30; 
-$red: #BD3749;
-$brick: #BD6A2F;
+// $mainGreen: #505B3C;
+// // $lightGreenOLD: #88A755;
+// $lightGreen: #A3AA43;
+// $darkGreen: #646F31;
+// $coral: #CF3E30; 
+// $red: #BD3749;
+// $brick: #BD6A2F;
+// $gray: #555555;
+// $white: #FFFFFF;
+// $footerGreen: #78806D;
+
+$x-darkGreen: #30320C;
+$darkGreen: #4B5019;
+$green: #646F31;
+$lightGreen: #88923A;
+$x-lightGreen: #A3A954;
+
+$footerGreen: #78806D;
+$creme: #D0D49F;
+
+$mustard: #AD822A;
+$orange: #D06423;
+$red: #CF3E30;
+$fucsia: #AD2F3C;
+
 $gray: #555555;
 $white: #FFFFFF;
-$footerGreen: #78806D;
+
+
+
+
+/* Buttons */
+
+.btns {
+	display: inline-block;
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 6px 16px;
+	border: 2px solid;
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	-ms-transition: all 0.15s ease;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.btn-secondary {
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+	border-color: $darkGreen;
+	color: $darkGreen;
+	font-weight: normal;
+	text-transform: uppercase;
+	background: transparent; 
+
+	&:focus {
+		text-decoration: none;
+		color: $darkGreen;
+	}
+
+  	&:hover {
+	    background: $darkGreen;
+	    border-color: $darkGreen;
+	    color: $white;
+	}
+}
+
+
 
 /* Icon Fonts */
 
