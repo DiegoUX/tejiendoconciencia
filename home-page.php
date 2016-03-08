@@ -36,7 +36,7 @@ get_header(); ?>
 					</div>
 					<div class="col-sm-6">
 						<h2>HASTA EL MOMENTO<br>HEMOS REUTILIZADO</h2>
-						<span class="timer" data-from="25" data-to="31234" data-speed="2800">+</span>
+						<span class="timer dataplus" data-from="25" data-to="31234" data-speed="2800">+</span>
 						<h2>BOLSAS PLÁSTICAS</h2>
 					</div>
 					<div class="col-sm-3">

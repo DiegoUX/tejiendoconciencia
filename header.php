@@ -32,52 +32,63 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<!-- <div class="wrapper"> -->
+		<!-- header -->
+		<header class="header clear" role="banner">
+			
+			<!-- <div class="container"> -->
+				<nav id="site-navigation" class="navbar navbar-fixed-top" role="navigation">
+	
+					<!-- <h3 class="sr-only"><?php _e( 'Main menu', 'html5blank' ); ?></h3>
+					<a class="sr-only" href="#primary" title="<?php esc_attr_e( 'Skip to content', 'html5blank' ); ?>"><?php _e( 'Skip to content', 'html5blank' ); ?></a> -->
 
-			<!-- header -->
-			<header class="header clear" role="banner">
-				<div class="container">
+					<div class="small-logo hidden-large">
+						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+							<img src="/wp-content/themes/tejiendoconciencia/images/small-logo.png" alt="TejiendoConCiencia Logo">
+						</a>
+					</div>
+					
 
-					<nav id="site-navigation" class="navbar navbar-fixed-top" role="navigation">
-		
-						<!-- Small Logo -->
-						<div class="small-logo">
-							<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-								<img src="/wp-content/themes/tejiendoconciencia/images/small-logo.png" alt="TejiendoConCiencia Logo">
-							</a>
+					<div class="navbar-header-custom">
+						<button type="button" class="navbar-toggle-custom" data-toggle="collapse" data-target=".navbar-mobile">
+					        <span class="ico-bar"></span>
+					        <span class="ico-bar"></span>
+					        <span class="ico-bar"></span>
+					    </button>
+					</div>
+					
+					<div class="top-header">
+						<div class="container-fluid fluid-custom">
+							<?php dynamic_sidebar('top-social'); ?>
 						</div>
+					</div>
 
-
-
-						<h3 class="sr-only"><?php _e( 'Main menu', 'html5blank' ); ?></h3>
-						<a class="sr-only" href="#primary" title="<?php esc_attr_e( 'Skip to content', 'html5blank' ); ?>"><?php _e( 'Skip to content', 'html5blank' ); ?></a>
-
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						    </button>
+					<div class="collapse navbar-mobile">
+						<!--<?php html5blank_nav(); ?>-->
+						<div class="container-fluid fluid-custom">
+							<div class="row">
+								<div class="col-md-2 hidden-mobile">
+									<!-- Small Logo -->
+									<div class="small-logo">
+										<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+											<img src="/wp-content/themes/tejiendoconciencia/images/small-logo.png" alt="TejiendoConCiencia Logo">
+										</a>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<?php
+									$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
+									wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav navbar-nav' . $menu_class, 'fallback_cb' => 'false' ) );
+									?>
+								</div>
+								<div class="col-md-2">
+									<div class="switcher">
+										<?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
+									</div>	
+								</div>
+							</div>
 						</div>
-
-						<div class="collapse navbar-collapse">
-							<!--<?php html5blank_nav(); ?>-->
-
-							<?php
-							$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
-							wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav navbar-nav' . $menu_class, 'fallback_cb' => 'false' ) );
-							?>
-							
-							<div class="switcher">
-								<?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
-							</div>	
-						</div>
-					</nav><!-- #site-navigation -->
-
-				</div>
-
-
-
-			</header>
-			<!-- /header -->
+					</div>
+				</nav><!-- #site-navigation -->
+				
+		</header>
+		<!-- /header -->

@@ -1,18 +1,46 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
+				<div class="container-fluid fluid-custom">
+					<div class="row">
+						<!-- <div class="col-sm-6">
+							<div class="footer-logo">
+								<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+									<img src="/wp-content/themes/tejiendoconciencia/images/small-logo.png" alt="TejiendoConCiencia Logo">
+								</a>
+							</div>
+							<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> · Tucumán · Argentina.</p>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<?php dynamic_sidebar('top-social'); ?>
+							</div>
+							<div class="mailto">
+								<a href="mailto:hola@tejiendoconciencia.org.ar">hola@tejiendoconciencia.org.ar</a>
+							</div>
+						</div> -->
+						
+						<div class="col-sm-4 col-sm-push-4">
+							<div class="footer-social">
+								<?php dynamic_sidebar('top-social'); ?>
+							</div>
+						</div>
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+						<div class="col-sm-4 col-sm-push-4">
+							<div class="mailto">
+								<a href="mailto:hola@tejiendoconciencia.org.ar">hola@tejiendoconciencia.org.ar</a>
+							</div>
+						</div>
+						
+						<div class="col-sm-4 col-sm-pull-8">
+							<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> · Tucumán · Argentina.</p>
+						</div>
+						
+						
 
+					</div>
+				</div>
 			</footer>
 			<!-- /footer -->
-
-		<!-- </div> -->
-		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
 
