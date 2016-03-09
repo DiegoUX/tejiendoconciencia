@@ -1,5 +1,3 @@
-// LOAD EQUALHEIGHTS PLUGIN...
-
 /**
  * Equal Heights Plugin
  * Equalize the heights of elements. Great for columns or any elements
@@ -18,38 +16,9 @@
  * than 300 pixels tall. Elements with too much content will gain a scrollbar.
  *
  */
+
+ !function(t){function e(e,i){return tallest=e?e:0,this.height("auto").each(function(){t(this).height()>tallest&&(tallest=t(this).height())}),i&&tallest>i&&(tallest=i),this.each(function(){t(this).height(tallest).css("overflow","auto")})}t.fn.equalHeights=function(i,h){var l=this;return t(window).resize(function(){e.call(l,i,h)}),e.call(l,i,h),this}}(jQuery);
  
-(function($) {
-    function equalHeights (minHeight, maxHeight) {
-        tallest = (minHeight) ? minHeight : 0;
-        this
-        .height('auto')
-        .each(function() {
-            if($(this).height() > tallest) {
-                tallest = $(this).height();
-            }
-        });
-        if((maxHeight) && tallest > maxHeight) tallest = maxHeight;
-        return this.each(function() {
-            $(this).height(tallest).css("overflow","auto");
-        });
-    }
-
-    $.fn.equalHeights = function(minHeight, maxHeight) {
-
-        var $this = this;
-
-        $(window).resize(function(){
-            equalHeights.call($this, minHeight, maxHeight);
-        });
-
-        equalHeights.call($this, minHeight, maxHeight);
-        return this;
-    };
-})(jQuery);
-
-// END EQUALHEIGHTS PLUGIN...
-
 
 /*
  * jQuery.appear
