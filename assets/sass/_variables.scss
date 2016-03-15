@@ -1,16 +1,5 @@
 /* Colors */
 
-// $mainGreen: #505B3C;
-// // $lightGreenOLD: #88A755;
-// $lightGreen: #A3AA43;
-// $darkGreen: #646F31;
-// $coral: #CF3E30; 
-// $red: #BD3749;
-// $brick: #BD6A2F;
-// $gray: #555555;
-// $white: #FFFFFF;
-// $footerGreen: #78806D;
-
 $x-darkGreen: #30320C;
 $darkGreen: #4B5019;
 $green: #646F31;
@@ -18,7 +7,6 @@ $lightGreen: #88923A;
 $x-lightGreen: #A3A954;
 
 $footerGreen: #78806D;
-// $footerBlack: #232200;
 $footerBlack: #1F1E0C;
 $creme: #D0D49F;
 
@@ -29,8 +17,6 @@ $fucsia: #AD2F3C;
 
 $gray: #555555;
 $white: #FFFFFF;
-
-
 
 
 /* Buttons */
@@ -135,3 +121,13 @@ $white: #FFFFFF;
     content: "\e90a";
 }
 
+.js div#preloader { 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: 9999; 
+    width: 100%; 
+    height: 100%; 
+    overflow: visible; 
+    background: #333 url('/wp-content/themes/tejiendoconciencia/images/ring-alt.gif') no-repeat center center; 
+}

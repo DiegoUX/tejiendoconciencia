@@ -86,6 +86,17 @@
 		}
 	}	
 
+	.feed-blog {
+		
+		.equalBlog {
+			height: auto !important;
+		}
+
+		.featured-post {
+			margin-bottom: 40px;
+		}
+	}
+
 	.footer {
 		.container-fluid.fluid-custom {
 			padding-left: 15px;
@@ -223,6 +234,19 @@
 
 	.hidden-mobile {
 		display: none;
+	}
+
+	// Default Pages...
+	.page {
+		.billboard-pages {
+			margin-top: 50px !important;
+		}
+
+		.text-content {
+			h2 {
+				padding: 0 !important;
+			}
+		}	
 	}
 	
 }

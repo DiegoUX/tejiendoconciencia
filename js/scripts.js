@@ -48,14 +48,21 @@
 		
 		'use strict';
 		
+		$(window).load(function(){
+		    $('#preloader').fadeOut('slow',function(){
+		    	$(this).remove();
+		    });
+		});
+
 		// DOM ready, take it away
 		// Logo header scroll down...
+		$('.home header').removeClass("minify");
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > '80') {  
-			    $('header').addClass("minify");
+			    $('.home header').addClass("minify");
 			}
 			else{
-			    $('header').removeClass("minify");
+			    $('.home header').removeClass("minify");
 			}
 		});
 
