@@ -15,7 +15,7 @@
 		<link href="/wp-content/themes/tejiendoconciencia/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-  		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,700' rel='stylesheet' type='text/css'>
+  		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,700' rel='stylesheet' type='text/css'>
 
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 

@@ -238,13 +238,13 @@ function html5wp_pagination()
 // Custom Excerpts
 function html5wp_index($length) // Create 20 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
 {
-    return 20;
+    return 15;
 }
 
 // Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');
 function html5wp_custom_post($length)
 {
-    return 40;
+    return 30;
 }
 
 // Create the Custom Excerpts callback
@@ -268,7 +268,8 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    // return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '...';
 }
 
 // Remove Admin bar

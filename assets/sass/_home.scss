@@ -1,6 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif !important;
-	font-size: 16px !important;
+	font-size: 14px !important;
 	color: #555555 !important;
 	font-weight: 400 !important;
 	background: #F7F7F7 !important;
@@ -315,7 +315,13 @@ header.minify {
 	}
 
 	h3 {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		color: #555;
+	}
+
+	p {
+		line-height: 170%;
+		font-size: 15px;
 	}
 
 	.btns {
@@ -364,6 +370,151 @@ header.minify {
 		content: "+";
 		margin-left: 5px;
 	} 
+}
+
+
+// Feed Blog section...
+.feed-blog {
+	margin: 80px 0;
+
+	.equalBlog {
+		overflow: visible !important;
+	}
+
+	.feed-title {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.main-divider.icon-needle {
+		margin-bottom: 40px;
+	}
+
+	.featured-post {
+		background: #bc8320;
+		border-bottom: 1px solid #bc8320;
+
+		.thumb-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.content-post {
+			background: #BC8320;
+			padding: 20px 30px;
+			color: #FFFFFF;
+
+			h2 {
+				line-height: 80%;
+				margin-top: 0;
+
+				a {
+					font-size: 22px;
+					color: #FFFFFF;
+				}
+			}
+
+			.date {
+				font-size: 12px;
+				text-transform: capitalize;
+			}
+
+			p {
+				margin-bottom: 5px;
+
+				.view-article {
+				    font-size: 12px;
+				    display: block;
+				    margin-top: 20px;
+				    border: 1px solid #fff;
+				    width: 85px;
+				    padding: 5px;
+				    text-align: center;
+				    vertical-align: middle;
+				    color: #fff;
+				    border-radius: 3px;
+
+				    &:hover{
+				    	text-decoration: none;
+				    	background: #FFFFFF;
+				    	color: #BC8320;
+				    }
+				}
+			}
+		}
+	}
+
+	.regular-posts {
+
+		article {
+			border-bottom: 1px solid #BC8320;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			overflow: hidden;
+
+			&:last-child {
+				// border-bottom: none;
+				padding-bottom: 27px;
+			}
+
+			.thumb-image img {
+				width: 120px;
+				height: auto;
+				float: left;
+				margin-right: 20px;
+				// margin-bottom: 20px;
+			}
+
+			h2 {
+				line-height: 60%;
+				margin-top: 0;
+				margin-bottom: 5px;
+
+				a {
+					font-size: 18px;
+					color: #555;
+
+					&:hover {
+						color: #555;
+					}
+				}
+			}
+
+			.date {
+				text-transform: capitalize;
+				font-size: 12px;
+				color: #BC8320;
+				font-weight: 600;
+
+				// &:after {
+				// 	content: "·";
+				// 	margin: 0 0 0 5px;
+				// }
+			}
+
+			// .category {
+			// 	a {
+			// 		font-size: 12px;
+			// 		color: #BC8320;
+			// 		font-weight: 600;
+			// 	}	
+			// }
+
+			p {
+				margin-bottom: 0;
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+span.small-line {
+	border-top: 1px solid #FFFFFF;
+	width: 70px;
+	display: block;
+	margin: 15px 0;
 }
 
 

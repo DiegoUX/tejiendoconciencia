@@ -61,6 +61,7 @@
 
 		// Set equalCols...
 		$(".equalCol").equalHeights();
+		$(".equalBlog").equalHeights();
 
 		// Counter...
 	    $('.timer').appear(function () {
