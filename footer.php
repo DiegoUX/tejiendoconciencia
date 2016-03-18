@@ -2,22 +2,6 @@
 			<footer class="footer" role="contentinfo">
 				<div class="container-fluid fluid-custom">
 					<div class="row">
-						<!-- <div class="col-sm-6">
-							<div class="footer-logo">
-								<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-									<img src="/wp-content/themes/tejiendoconciencia/images/small-logo.png" alt="TejiendoConCiencia Logo">
-								</a>
-							</div>
-							<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> · Tucumán · Argentina.</p>
-						</div>
-						<div class="col-sm-6">
-							<div class="footer-social">
-								<?php dynamic_sidebar('top-social'); ?>
-							</div>
-							<div class="mailto">
-								<a href="mailto:hola@tejiendoconciencia.org.ar">hola@tejiendoconciencia.org.ar</a>
-							</div>
-						</div> -->
 						
 						<div class="col-sm-4 col-sm-push-4">
 							<div class="footer-social">
@@ -27,15 +11,13 @@
 
 						<div class="col-sm-4 col-sm-push-4">
 							<div class="mailto">
-								<a href="mailto:hola@tejiendoconciencia.org.ar">hola@tejiendoconciencia.org.ar</a>
+								<a href="mailto:hola@tejiendoconciencia.org.ar">hola@tejiendoconciencia.com</a>
 							</div>
 						</div>
 						
 						<div class="col-sm-4 col-sm-pull-8">
 							<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> · Tucumán · Argentina.</p>
-						</div>
-						
-						
+						</div>	
 
 					</div>
 				</div>

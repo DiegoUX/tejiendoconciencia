@@ -74,7 +74,13 @@
 							<div class="col-md-8">
 								<?php
 								$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
-								wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav navbar-nav' . $menu_class, 'fallback_cb' => 'false' ) );
+								wp_nav_menu( array( 
+									'theme_location' => 'primary', 
+									'menu' => 'main',
+									'container' => '', 
+									'menu_class' => 'nav navbar-nav' . $menu_class, 
+									'fallback_cb' => 'false' 
+								) );
 								?>
 							</div>
 							<div class="col-md-2">

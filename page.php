@@ -8,7 +8,7 @@
 			<?php
 			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false, '' );
 			?>
-			<div class="billboard-pages" style="background: url(<?php echo $src[0]; ?> ) no-repeat center center/cover fixed">
+			<div class="billboard-pages" style="background: url(<?php echo $src[0]; ?> ) no-repeat center -45px/cover fixed">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
