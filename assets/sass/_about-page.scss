@@ -1,0 +1,42 @@
+.vision,
+.mision {
+	text-align: center;
+	padding: 0 65px;
+	margin-top: 40px;
+
+	h2 {
+		color: #6B243E !important;
+	}
+
+	p {
+		color: #6B243E;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 38px;
+	}
+}
+
+#reflect {
+	display: inline-block;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+section.founders {
+	background: #6B243E;
+	margin-top: 80px;
+	color: #ffffff;
+	
+	h2 {
+		color: #ffffff;
+		text-align: center;
+	}
+
+	h3 {
+		color: #ffffff;
+	}
+}

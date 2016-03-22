@@ -1,6 +1,7 @@
 <?php /* Template Name: Contact Page */ get_header(); ?>
+<?php remove_filter( 'the_content', 'wpautop' ); ?>
 
-	<main role="main" class="contact">
+	<main role="main" class="contact-wrapper">
 		<!-- section -->
 		<section>
 

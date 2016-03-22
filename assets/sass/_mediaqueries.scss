@@ -97,6 +97,12 @@
 		}
 	}
 
+	.contact-wrapper {
+		// h2 {
+		// 	font-size: 
+		// }
+	}
+
 	.footer {
 		.container-fluid.fluid-custom {
 			padding-left: 15px;
@@ -238,7 +244,8 @@
 
 	// Default Pages...
 	.page {
-		.billboard-pages {
+		.billboard-pages,
+		.contact-wrapper {
 			margin-top: 50px !important;
 		}
 
@@ -247,6 +254,12 @@
 				padding: 0 !important;
 			}
 		}	
+
+		.contact-wrapper {
+			h2 {
+				padding: 0;
+			}
+		}
 	}
 	
 }
