@@ -14,7 +14,7 @@ get_header(); ?>
 			<div class="billboard-pages" style="background: url(<?php echo $src[0]; ?> ) no-repeat center -45px/cover fixed">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-10 col-md-offset-1">
+						<div class="col-lg-10 col-lg-offset-1">
 							<div class="text-content text-center">
 								<h1><?php the_title(); ?></h1>
 								<h2><?php the_field('subtitulo'); ?></h2>
@@ -30,8 +30,6 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<?php the_content(); ?>
-
-					<br class="clear">
 
 				</article>
 				<!-- /article -->

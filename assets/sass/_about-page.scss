@@ -3,6 +3,7 @@
 	text-align: center;
 	padding: 0 65px;
 	margin-top: 40px;
+	overflow: hidden;
 
 	h2 {
 		color: #6B243E !important;
@@ -14,6 +15,10 @@
 		font-style: italic;
 		line-height: 38px;
 	}
+}
+
+.mision {
+	margin-top: 0;
 }
 
 #reflect {
@@ -28,15 +33,187 @@
 
 section.founders {
 	background: #6B243E;
-	margin-top: 80px;
+	margin-top: 190px;
+	padding-bottom: 80px;
 	color: #ffffff;
+
+	img {
+		position: relative;
+	    margin: 0 auto -145px;
+	    display: block;
+	    border-radius: 100%;
+	    width: 290px;
+	    height: auto;
+	    top: -145px;
+	    border: 2px solid #f7f7f7;
+	}
+
+	.divider {
+		display: inline-block;
+		margin: 20px 0;
+	}
+
+	p {
+		line-height: 1.8em;
+	}
 	
 	h2 {
 		color: #ffffff;
 		text-align: center;
+		font-size: 40px;
+		margin: 40px 0;
 	}
 
 	h3 {
 		color: #ffffff;
+		font-size: 22px;
+		margin: 0;
+	}
+
+	.cv-link {
+		margin-top: 50px;
+		 
+		a {
+			color: #ffffff;
+			text-decoration: underline;
+			text-transform: uppercase;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.icon-profile {
+			font-size: 18px;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+	}
+
+	.a-left {
+		text-align: left;
+	}
+
+	.a-right {
+		text-align: right;
+	}
+}
+
+section.cta-research {
+	padding: 80px 0;
+    text-align: center;
+    background: url('/wp-content/themes/tejiendoconciencia/images/basura-en-el-mar.jpg') no-repeat scroll center center transparent;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(12,17,1, 0.6);
+		-moz-transition: background .3s linear;
+		-webkit-transition: background .3s linear;
+		-o-transition: background .3s linear;
+		transition: background .3s linear;
+	}
+
+	.icon-research {
+		color: #ffffff;
+		display: inline-block;
+		margin-bottom: 30px;
+		font-size: 60px; 
+	}
+
+	p {
+		color: #ffffff;
+		font-size: 26px;
+		line-height: normal;
+		font-style: italic;
+	}
+
+	a.btn {
+		font-family: 'Ubuntu Condensed', sans-serif !important;
+		margin-top: 50px;
+		border: 2px solid $lightGreen;
+		color: #fff;
+		font-weight: normal;
+		padding: 10px 25px;
+		text-transform: uppercase;
+		background: $lightGreen; 
+		display: inline-block;
+		transition: all 0.15s ease;
+		-webkit-transition: all 0.15s ease;
+		-moz-transition: all 0.15s ease;
+		-o-transition: all 0.15s ease;
+		-ms-transition: all 0.15s ease;
+
+	  	&:hover {
+		    background: transparent;
+		    border-color: $white;
+		    color: $white; 
+		}
+	}
+}
+
+section.press {
+	padding: 40px 0;
+
+	h2 {
+		color: #848484;
+		text-align: center;
+		font-size: 40px;
+		margin: 50px 0;
+	}
+
+	h3 {
+		color: #848484;
+		font-size: 22px;
+		margin: 0 0 30px;
+	}
+
+	ul {
+		margin-left: 18px;
+
+		li {
+			list-style: disc outside none;
+			margin-bottom: 20px;
+			line-height: 1.6em;
+			a {
+				color: #88923A;
+				font-weight: 600;
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.distinctions {
+		margin-top: 45px;
+		background: #6B243E;
+    	padding: 20px;
+
+    	h3 {
+    		color: #ffffff;
+    		margin-bottom: 20px;
+    		border-bottom: 1px solid #ffffff;
+    		padding-bottom: 5px;
+    	}
+
+    	ul {
+    		margin-left: 0;
+
+    		li {
+    			list-style: none;
+    			color: #ffffff;
+    		}
+    	}
 	}
 }
