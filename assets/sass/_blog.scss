@@ -67,29 +67,15 @@
 			    outline: none;
 			}
 
-			.search-submit {
-				font-family: 'Ubuntu Condensed', sans-serif !important;
-				border: 2px solid $lightGreen;
-				border-radius: 6px;
-				color: #fff;
-				font-size: 16px;
-				font-weight: normal;
-				padding: 8px 24px;
-				text-transform: uppercase;
-				background: $lightGreen; 
-				display: inline-block;
-				transition: all 0.15s ease;
-				-webkit-transition: all 0.15s ease;
-				-moz-transition: all 0.15s ease;
-				-o-transition: all 0.15s ease;
-				-ms-transition: all 0.15s ease;
+			/* i.search-icon {
+				    background: url(/wp-content/themes/tejiendoconciencia/images/search.svg) no-repeat scroll 0 0 transparent;
+				    position: absolute;
+				    height: 32px;
+				    width: 32px;
+				    display: inline-block;
+				    top: -1px;
+			} */
 
-			  	&:hover {
-				    background: transparent;
-				    border-color: $lightGreen;
-				    color: $lightGreen; 
-				}
-			}
 		}
 	}
 }

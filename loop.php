@@ -18,7 +18,7 @@
 
 		<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+				<?php the_post_thumbnail('custom-size-blog'); // Fullsize image for the single post ?>
 			</a>
 		<?php endif; ?>
 		<!-- /post thumbnail -->
