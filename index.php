@@ -1,19 +1,39 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main" class="landingBlog">
 		<!-- section -->
 		<section>
+			<div class="billboard-blog">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="text-content text-center">
+								<h1><?php _e( 'Tejiendo un Blog', 'html5blank' ); ?></h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1">
+						<?php get_template_part('loop'); ?>
+						<?php get_template_part('pagination'); ?>
+					</div>
+					
+					<div class="col-md-4">
+						<?php get_template_part('sidebar'); ?>
+					</div>
+					
+				</div>
+			</div>
 
-			<?php get_template_part('loop'); ?>
 
-			<?php get_template_part('pagination'); ?>
 
 		</section>
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
