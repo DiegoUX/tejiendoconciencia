@@ -60,22 +60,42 @@
 		padding-left: 40px;
 
 		.search {
+			position: relative;
+
 			input.search-input {
-			    width: 75%;
+			    width: 100%;
 			    border: 1px solid #CCCCCC;
-			    padding: 10px;
+			    padding: 10px 40px 10px 10px;
 			    outline: none;
+
+			    &:focus {
+			    	border: 1px solid #88923A;
+			    }
 			}
 
-			/* i.search-icon {
-				    background: url(/wp-content/themes/tejiendoconciencia/images/search.svg) no-repeat scroll 0 0 transparent;
-				    position: absolute;
-				    height: 32px;
-				    width: 32px;
-				    display: inline-block;
-				    top: -1px;
-			} */
+			.glyphicon-search {
+				position: absolute;
+				top: 15px;
+				right: 15px;
+			}
+		}
 
+		.sidebar-widget {
+			
+			h3 {
+				margin-top: 40px;
+			}
+
+			ul {
+				li {
+					padding-bottom: 5px;
+					a {
+						text-transform: Capitalize;
+						color: #88923A;
+						font-weight: 600;
+					}
+				}
+			}
 		}
 	}
 }

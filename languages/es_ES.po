@@ -186,8 +186,8 @@ msgid "Tag Archive: "
 msgstr "Archivo de etiquetas: "
 
 #: ../searchform.php:3
-msgid "To search, type and hit enter."
-msgstr "Para buscar, escribe y presiona Enter"
+msgid "To search, type and hit enter..."
+msgstr "Para buscar, escribe y presiona Enter..."
 
 #~ msgid "%s results for "
 #~ msgstr "%s Ergebnisse für "

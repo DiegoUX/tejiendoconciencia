@@ -1,8 +1,20 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main" class="landingBlog">
 	<!-- section -->
 	<section>
+
+	<div class="billboard-blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="text-content text-center">
+						<h1><?php _e( 'Tejiendo un Blog', 'html5blank' ); ?></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
