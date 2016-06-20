@@ -1,9 +1,9 @@
-.landingBlog {
+.layoutBlog {
 	.billboard-blog {
 		position: relative;
 		margin-top: 90px;
 		height: 160px;
-		border-bottom: 8px solid #767B6A; 
+		border-bottom: 8px solid #A3721D; 
 		background: #BC8320 no-repeat center -45px/cover fixed;
 		margin-bottom: 30px;
 
@@ -15,6 +15,22 @@
 				margin: 50px 0 50px 0;
 			}
 		}
+	}
+
+	.back-to {
+		margin-bottom: 15px;
+
+		a {
+			color: #BC8320;
+		}
+	}
+
+	.subTitle {
+		color: #777777;
+		margin-top: 0;
+		margin-bottom: 25px;
+		display: inline-block;
+    	padding-left: 8px;
 	}
 
 	article {
@@ -43,6 +59,7 @@
 
 		.category a {
 			text-decoration: underline;
+			color: #777777;
 
 			&:hover {
 				text-decoration: none;
@@ -50,14 +67,22 @@
 		}
 
 		.post-thumbnail {
-			padding: 10px 0 20px;
+			padding: 10px 0;
 		    display: block;
 		    cursor: pointer;
+		}
+
+		.excerpt-blog p {
+		    margin-top: 10px;
+		    text-align: justify;
+		}
+
+		&:first-child {
+		    margin-top: 45px;
 		}
 	}
 
 	.sidebar {
-		padding-left: 40px;
 
 		.search {
 			position: relative;
@@ -96,6 +121,89 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+.single {
+
+	.back-to {
+		position: absolute;
+		z-index: 8999;
+	}
+
+	.post {
+		padding-bottom: 40px;
+		
+		.post-title {
+			margin-top: 10px;
+			font-size: 30px;
+		}
+
+		h2 {
+			margin-top: 20px;
+		}
+
+		p {
+			font-size: 16px;
+			// text-align: justify;
+		}
+
+		.date-content {
+			margin-bottom: 20px;
+
+			a {
+				color: #777777;
+			}
+		}
+
+		ul {
+			padding-left: 30px;
+
+			li {
+				margin-bottom: 5px;
+				font-size: 16px;
+
+				&:before {
+				    content: "•";
+				    padding-right: 10px;
+				    color: #BC8320;
+				}
+
+				ul {
+					margin-top: 5px;
+					li {
+						&:before {
+						    content: "•";
+						    padding-right: 10px;
+						    color: #777777;
+						}
+					}
+				}
+			}
+		}
+
+		ol {
+			padding-left: 30px;
+
+			li {
+				margin-bottom: 5px;
+				font-size: 16px;
+				list-style: decimal inside;
+			}
+		}
+
+		a {
+			color: #BC8320;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		em {
+			font-style: italic;
 		}
 	}
 }

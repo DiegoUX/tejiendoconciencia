@@ -105,7 +105,8 @@ a:focus {
 				&.active,
 				&:hover,
 				&:focus,
-				&.current-menu-item {
+				&.current-menu-item,
+				&.current_page_parent {
 					> a {
 						background: none;
 						border-bottom: 2px solid $lightGreen;
@@ -164,7 +165,8 @@ header.minify {
 					&.active,
 					&:hover,
 					&:focus,
-					&.current-menu-item {
+					&.current-menu-item,
+					&.current_page_parent {
 						> a {
 							background: none;
 							border-bottom: 2px solid $white;
