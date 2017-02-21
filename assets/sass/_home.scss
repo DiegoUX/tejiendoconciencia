@@ -244,10 +244,10 @@ header.minify {
 			background: $lightGreen; 
 			display: inline-block;
 			transition: all 0.15s ease;
-			-webkit-transition: all 0.15s ease;
-			-moz-transition: all 0.15s ease;
-			-o-transition: all 0.15s ease;
-			-ms-transition: all 0.15s ease;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
 
 		  	&:hover {
 			    background: transparent;
@@ -332,24 +332,26 @@ header.minify {
 	
 	.serviceIcon {
 
-		&:hover:before {
-			font-size: 54px;
-			padding: 40px;
+		&:hover {
+			&:before {
+				font-size: 68px;
+				padding: 30px;
+			}
 		}
 
 		&:before {
 			border-radius: 100px;
 			display: inline-block;
-			font-size: 44px;
+			font-size: 54px;
 			color: #ffffff;
-			padding: 45px;
+			padding: 40px;
 			width: 135px;
 			height: 135px;
-			transition: all 0.15s ease;
-			-webkit-transition: all 0.15s ease;
-			-moz-transition: all 0.15s ease;
-			-o-transition: all 0.15s ease;
-			-ms-transition: all 0.15s ease;
+			transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
 		}	
 
 		&.mustard:before { background: $mustard; }
@@ -358,14 +360,15 @@ header.minify {
 		&.fucsia:before { background: $fucsia; }
 	}
 
-	h3 {
-		margin-bottom: 20px;
+	h2 {
+		margin: 25px 0;
 		color: #555;
 	}
 
 	p {
-		line-height: 170%;
-		font-size: 15px;
+		line-height: 150%;
+		font-size: 16px;
+		padding: 0 20px;
 	}
 
 	.btns {
