@@ -11,7 +11,7 @@
 
 						<div class="col-sm-4 col-sm-push-4">
 							<div class="mailto">
-								<a href="mailto:hola@tejiendoconciencia.org.ar">hola@tejiendoconciencia.com</a>
+								<a href="mailto:hola@tejiendoconciencia.org">hola@tejiendoconciencia.org</a>
 							</div>
 						</div>
 						
