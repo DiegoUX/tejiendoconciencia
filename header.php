@@ -56,6 +56,9 @@
 				
 				<div class="top-header">
 					<div class="container-fluid fluid-custom">
+						<div class="switcher">
+							<?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
+						</div>	
 						<?php dynamic_sidebar('top-social'); ?>
 					</div>
 				</div>
@@ -71,7 +74,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-8">
+							<div class="col-lg-8 col-md-7">
 								<?php
 								$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
 								wp_nav_menu( array( 
@@ -83,10 +86,8 @@
 								) );
 								?>
 							</div>
-							<div class="col-md-2">
-								<div class="switcher">
-									<?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
-								</div>	
+							<div class="col-lg-2 col-md-3 tar">
+								<?php dynamic_sidebar('boton-tienda'); ?>
 							</div>
 						</div>
 					</div>

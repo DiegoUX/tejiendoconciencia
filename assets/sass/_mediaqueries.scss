@@ -158,11 +158,14 @@
 				.fluid-custom {
 					padding-right: 0;
 					padding-left: 0;
+					overflow: hidden;
+					padding-top: 30px;
 
 					.navbar-nav {
 						position: relative;
-						top: 30px;
+						// top: 30px;
 						left: -30px;
+						padding-bottom: 50px;
 
 						> li {
 							float: none;

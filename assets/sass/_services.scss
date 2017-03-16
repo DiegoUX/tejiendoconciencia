@@ -1,0 +1,144 @@
+.servicios,
+.services {
+	.billboard-pages {
+		.text-content {
+			h2 {
+				padding: 0 40px;
+			}
+		}
+	}
+
+	.talks {
+		background: $ocre;
+		padding: 80px 0;
+		text-align: center;
+		color: $lightCreme;
+
+		.icono-talks {
+			background: url('/wp-content/themes/tejiendoconciencia/images/icono-servicio1.svg') no-repeat scroll center center transparent;
+			background-size: cover;
+			width: 150px;
+			height: 150px;
+			display: inline-block;
+		}
+
+		h2 {
+			color: $lightCreme;
+			margin: 30px 0;
+		}
+
+		p {
+			font-size: 17px;
+			line-height: 30px;
+			padding-bottom: 10px;
+		}
+
+		.curso-info {
+			font-weight: 600;
+			border-bottom: 1px solid $lightCreme;
+			border-top: 1px solid $lightCreme;
+			text-transform: normal;
+			font-style: italic;
+			padding: 10px 0;
+			margin: 10px 0;
+
+			.point {
+				margin: 0 25px;
+			}
+		}
+	}
+
+	.workshops {
+		background: $lightCreme;
+		padding: 80px 0;
+		text-align: center;
+		color: $lightGray;
+
+		.icono-workshops {
+			background: url('/wp-content/themes/tejiendoconciencia/images/icono-servicio2.svg') no-repeat scroll center center transparent;
+			background-size: cover;
+			width: 150px;
+			height: 150px;
+			display: inline-block;
+		}
+
+		h2 {
+			color: $lightGray;
+			margin: 30px 0;
+		}
+
+		h3 {
+			font-size: 24px;
+			color: $ocre;
+			margin-top: 60px;
+		}
+
+		p {
+			font-size: 17px;
+			line-height: 30px;
+			padding-bottom: 10px;
+		}
+
+		.curso-info {
+			font-weight: 600;
+			border-bottom: 1px solid $lightGray;
+			border-top: 1px solid $lightGray;
+			text-transform: normal;
+			font-style: italic;
+			padding: 10px 0;
+			margin: 10px 0;
+
+			.point {
+				margin: 0 25px;
+			}
+		}
+	}
+
+	.quick-contact {
+		background: $darkGreen;
+		padding: 100px 0;
+		text-align: center;
+		color: #FFFFFF;
+
+		i {
+			font-size: 30px;
+			margin-bottom: 40px;
+			display: inline-block;
+		}
+
+		p {
+			color: #FFFFFF;
+			font-size: 26px;
+			font-style: italic;
+		}
+
+		a.btn {
+			font-family: 'Ubuntu Condensed', sans-serif !important;
+			margin-top: 30px;
+			border: 2px solid $lightGreen;
+			color: #fff;
+			font-weight: normal;
+			padding: 10px 25px;
+			text-transform: uppercase;
+			background: $lightGreen; 
+			display: inline-block;
+			transition: all 0.15s ease;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+
+		  	&:hover {
+			    background: transparent;
+			    border-color: $white;
+			    color: $white; 
+			}
+		}
+	}
+
+	.bottom-img {
+		img {
+			width: 100%;
+		}
+	}
+}
