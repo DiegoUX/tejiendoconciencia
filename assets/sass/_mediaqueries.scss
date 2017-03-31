@@ -1,5 +1,18 @@
 @media only screen and (max-width:480px) {
 	
+	#site-navigation .navbar-mobile .shopping-btn {
+		font-size: 12px !important;
+	}
+
+	.switch-lang.hidden-large {
+	    left: 15px;
+	    position: absolute;
+
+	    .switcher {
+	    	margin-top: 5px !important;
+	    }
+	}
+
 	main {
 		#hero {
 			.heroContent {
@@ -84,6 +97,11 @@
 		.equalCol {
 			height: auto !important;
 		}
+	}
+
+	// Billboard pages...
+	.page .billboard-pages {
+		height: 500px !important;
 	}	
 
 	.feed-blog {
@@ -97,11 +115,16 @@
 		}
 	}
 
+	// Contact...
 	.contact-wrapper {
-		// h2 {
-		// 	font-size: 
-		// }
+		.form-container {
+			.wpcf7-form {
+				margin-right: 0 !important;
+				margin-bottom: 70px;
+			}
+		}	
 	}
+
 
 	.footer {
 		.container-fluid.fluid-custom {
@@ -144,6 +167,16 @@
 }	
 
 @media only screen and (max-width:992px) {
+
+	.switch-lang.hidden-large {
+	    left: 15px;
+	    position: absolute;
+
+	    .switcher {
+	    	margin-top: 5px !important;
+	    }
+	}
+
 	header {
 		
 		#site-navigation {
@@ -266,9 +299,31 @@
 	}
 
 	// Blog ...
-	.landingBlog {
+	.layoutBlog {
 		.billboard-blog {
 			margin-top: 50px !important;
+		}
+	}
+
+	// Quienes Somos...
+	.page-template-about-page {
+		.founders {
+			.container {
+				.tar,
+				.a-right {
+					text-align: left !important;
+				}
+
+				.a-left {
+					margin-bottom: 70px;
+				}
+			}	
+		}
+
+		.press {
+			ul {
+				margin-bottom: 50px; 
+			}
 		}
 	}
 	

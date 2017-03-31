@@ -67,6 +67,24 @@ header {
 			}
 		}
 	}
+
+	.switch-lang {
+		.switcher {
+			margin-top: 0 !important;
+
+			a {
+				font-size: 12px;
+				color: #b7bc6d;
+				margin: 0 10px;
+				text-transform: uppercase;
+
+				&.current_language {
+					border-bottom: 1px solid;
+					padding-bottom: 1px;
+				}
+			}
+		}
+	}
 }
 
 a:focus {

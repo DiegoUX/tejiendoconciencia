@@ -86,7 +86,12 @@
 								) );
 								?>
 							</div>
-							<div class="col-lg-2 col-md-3 tar">
+							<div class="switch-lang hidden-large">
+								<div class="switcher">
+									<?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
+								</div>
+							</div>	
+							<div class="col-lg-2 col-md-3 tar shop-btn-wrap">
 								<?php dynamic_sidebar('boton-tienda'); ?>
 							</div>
 						</div>
