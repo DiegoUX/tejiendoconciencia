@@ -146,6 +146,20 @@
 			text-align: center !important;
 		}
 	}
+
+	// Productos...
+	.product-gallery {
+		.gallery {
+
+			br {
+				display: none;
+			}
+			
+			.gallery-item {
+				width: 25% !important;
+			}
+		}
+	}		
 }
 
 @media only screen and (min-width:993px) {
