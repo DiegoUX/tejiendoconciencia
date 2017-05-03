@@ -1,7 +1,7 @@
 .online-shop {
 	position: relative;
 	background: $fucsia;
-	margin-top: 100px;
+	margin-top: 98px;
 	padding: 50px 0;
 
 	.float-circle {
@@ -43,11 +43,11 @@
 		text-transform: uppercase;
 		background: $lightGreen; 
 		display: inline-block;
-		transition: all 0.15s ease;
-		-webkit-transition: all 0.15s ease;
-		-moz-transition: all 0.15s ease;
-		-o-transition: all 0.15s ease;
-		-ms-transition: all 0.15s ease;
+		transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
 
 	  	&:hover {
 		    background: transparent;
@@ -101,10 +101,10 @@
 			background: #848484; 
 			display: inline-block;
 			transition: all 0.15s ease;
-			-webkit-transition: all 0.15s ease;
-			-moz-transition: all 0.15s ease;
-			-o-transition: all 0.15s ease;
-			-ms-transition: all 0.15s ease;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
 
 		  	&:hover {
 			    background: transparent;
@@ -159,6 +159,7 @@
 
 .product-gallery {
 	background-color: #FFFFFF;
+	padding-bottom: 80px;
 	
 	.gallery {
 		.gallery-item {
@@ -168,7 +169,127 @@
 			img {
 				border: 5px solid transparent !important;
 				height: auto;
+				-webkit-transition: all 0.4s ease;
+				-moz-transition: all 0.4s ease;
+				-ms-transition: all 0.4s ease;
+				-o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+
+				&:hover {
+					opacity: 0.8;
+				}
 			}
 		}
+	}
+}
+
+// Kit section...
+.kit-section {
+	background: url("/wp-content/themes/tejiendoconciencia/images/products/imagen_kit.png") no-repeat scroll center right #889239;
+	background-size: contain;
+	padding: 60px 0 80px;
+	color: #EAEADC;
+
+	h1 {
+		font-size: 50px;
+		line-height: 60px;
+		color: #EAEADC;
+		margin-bottom: 40px;
+	}
+
+	.kit-subt {
+		font-size: 16px;
+		line-height: 25px;
+		font-weight: 600;
+		color: #EAEADC;
+		text-transform: none;
+	}
+
+	ul {
+		margin-top: 30px;
+		padding-left: 15px;
+
+		li {
+			list-style: outside;
+			margin-bottom: 25px;
+			font-weight: 100;
+			font-size: 16px;
+		}
+	}
+
+	.kit-btns {
+		margin-top: 40px;
+
+		a {
+			margin-right: 20px;
+			color: #88923a;
+			font-family: 'Ubuntu Condensed', sans-serif;
+			text-transform: uppercase;
+			font-size: 18px;
+			border-color: #FFFFFF;
+			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
+			-ms-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+
+			i {
+				margin-right: 8px;
+			}
+
+			&:hover {
+				background: transparent;
+				color: #FFFFFF;
+			}
+
+			&.minisite-btn {
+				background: #686D38;
+				border-color: #686D38;
+				color: #FFFFFF;
+
+				&:hover {
+					background: transparent;
+					color: #FFFFFF;
+					border-color: #FFFFFF;
+				}
+			}
+		}
+	}
+}
+
+// Video tutorial...
+.video-tuto {
+	background: #4F5125;
+	padding: 50px 0 80px;
+	text-align: center;
+
+	h2 {
+		color: #E4E5D1;
+		margin-bottom: 50px;
+	}
+
+	h4 a {
+		color: #E4E5D1;
+		margin-top: 30px;
+		display: inline-block;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover {
+			text-decoration: none;
+			opacity: 0.7;
+		}
+
+		i.icon-youtube {
+			margin-right: 8px;
+			font-size: 16px;
+		}
+	}
+
+	iframe {
+		border: 6px solid #A5A5A5;
 	}
 }

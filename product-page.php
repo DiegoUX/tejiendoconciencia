@@ -3,6 +3,7 @@
 
 get_header(); ?>
 <?php remove_filter( 'the_content', 'wpautop' ); ?>
+<?php remove_filter ('acf_the_content', 'wpautop'); ?>
 
 	<main role="main">
 		<!-- section -->
@@ -25,12 +26,9 @@ get_header(); ?>
 						</div>	
 					</div>
 					<!-- end gallery -->
-					
-					<!-- kit section -->
-					<section class="kit-section">
-						
-					</section>
-					<!-- end kit section -->
+					<!-- Kit y video -->
+					<?php the_field('kit_mas_video'); ?>
+					<!-- en kit y video -->
 				</article>
 				<!-- /article -->
 
