@@ -33,7 +33,7 @@ get_header(); ?>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="feed-title"><?php _e( 'Tejiendo un Blog', 'html5blank' ); ?></h1>
+							<h1 class="feed-title"><?php dynamic_sidebar('blog-title'); ?></h1>
 							<i class="main-divider icon-needle"></i>
 						</div>
 

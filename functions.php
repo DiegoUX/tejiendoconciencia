@@ -222,6 +222,17 @@ if (function_exists('register_sidebar'))
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+
+    // Traducción del Título del Blog
+    register_sidebar(array(
+        'name' => __('Widget Título del Blog', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'blog-title',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => ''
+    ));
 }
 
 // Remove wp_head() injected Recent Comment styles
