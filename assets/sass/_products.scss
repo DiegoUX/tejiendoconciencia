@@ -87,8 +87,16 @@
 		}
 	}
 
+	.qadro-img {
+	    background: transparent url("/wp-content/themes/tejiendoconciencia/images/products/showroom.jpg") no-repeat scroll 0 0 / cover ;
+	    border: 2px solid #848484;
+	    border-top: none;
+	    height: 164px;
+	}
+
 	.puro-dsn {
 		text-align: center;
+		min-height: 329px;
 
 		a.btn {
 			font-family: 'Ubuntu Condensed', sans-serif !important;
@@ -114,7 +122,7 @@
 		}
 
 		img {
-			margin-top: 25px;
+			margin-top: 16px;
 		}
 	}
 
@@ -185,6 +193,14 @@
 }
 
 // Kit section...
+
+body.products .kit-section {
+	background: url("/wp-content/themes/tejiendoconciencia/images/products/image_kit.png") no-repeat scroll center right #889239;
+	background-size: contain;
+	padding: 60px 0 80px;
+	color: #EAEADC;
+}
+
 .kit-section {
 	background: url("/wp-content/themes/tejiendoconciencia/images/products/imagen_kit.png") no-repeat scroll center right #889239;
 	background-size: contain;
