@@ -7,6 +7,7 @@
 	.switch-lang.hidden-large {
 	    left: 15px;
 	    position: absolute;
+	    z-index: 9998;
 
 	    .switcher {
 	    	margin-top: 5px !important;
@@ -218,6 +219,7 @@
 	.switch-lang.hidden-large {
 	    left: 15px;
 	    position: absolute;
+	    z-index: 9998;
 
 	    .switcher {
 	    	margin-top: 5px !important;
