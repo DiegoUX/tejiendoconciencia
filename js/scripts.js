@@ -48,11 +48,16 @@
 		
 		'use strict';
 		
-		$(window).load(function(){
+		// $(window).load(function(){
+		//     $('#preloader').fadeOut('slow',function(){
+		//     	$(this).remove();
+		//     });
+		// });
+		setTimeout(function(){   
 		    $('#preloader').fadeOut('slow',function(){
 		    	$(this).remove();
 		    });
-		});
+		}, 5000);
 
 		// DOM ready, take it away
 		// Logo header scroll down...
